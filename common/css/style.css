@@ -52,3 +52,65 @@
 }
 
 /* ここまで */
+
+
+
+
+/* footer部分　css */
+
+footer {
+  background: #0180BE;
+  text-align: center;
+}
+
+ul,
+.flag,
+small {
+  margin: 20px 0;
+}
+
+.flag {
+  padding-top: 20px;
+}
+
+ul {
+  list-style: none;
+  font-size: 12px;
+
+}
+
+.footer_menu {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer_menu li {
+  border-bottom: 1px #fff solid;
+  padding-bottom: 8px;
+  padding-top: 12px;
+}
+
+.footer_menu li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 7.5px;
+}
+
+.sns_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sns_link li {
+  margin-right: 20px;
+}
+
+.sns_link img {
+  width: 30px;
+}
+
+small {
+  padding-bottom: 20px;
+}
