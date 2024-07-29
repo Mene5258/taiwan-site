@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* ローディングアニメーション */
+
+/* ロゴの位置、背景設定 */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #0180BE;
+  z-index: 555;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes taiwan_logo_loading {
+  0% {
+    opacity: 0
+  }
+
+  20% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.taiwan_logo {
+  animation-name: taiwan_logo_loading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* jsでクラスloadedを付与　その後設定した要素を消す */
+.loaded {
+  opacity: 1;
+  visibility: hidden;
+}
+
+/* ここまで */
