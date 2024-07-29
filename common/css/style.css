@@ -30,8 +30,12 @@
   position: absolute;
   right: 12px;
   top: 16px;
-  height: 20px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50px;
   padding-top: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+
   /* ポインターの形状 指 */
   cursor: pointer;
   color: #fff;
