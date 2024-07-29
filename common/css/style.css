@@ -152,118 +152,119 @@
 img {
   width: 100px;
   height: 39.6px;
+}
 
-  /* ローディングアニメーション */
+/* ローディングアニメーション */
 
-  /* ロゴの位置、背景設定 */
-  #loading {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: #0180BE;
-    z-index: 555;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ロゴの位置、背景設定 */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #0180BE;
+  z-index: 555;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes taiwan_logo_loading {
+  0% {
+    opacity: 0
   }
 
-  @keyframes taiwan_logo_loading {
-    0% {
-      opacity: 0
-    }
-
-    20% {
-      opacity: 0.3;
-    }
-
-    40% {
-      opacity: 0.6;
-    }
-
-    60% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
+  20% {
+    opacity: 0.3;
   }
 
-  .taiwan_logo {
-    animation-name: taiwan_logo_loading;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+  40% {
+    opacity: 0.6;
   }
 
-  /* jsでクラスloadedを付与　その後設定した要素を消す */
-  .loaded {
+  60% {
     opacity: 1;
-    visibility: hidden;
   }
 
-  /* ここまで */
-
-
-
-
-  /* footer部分　css */
-
-  footer {
-    background: #0180BE;
-    text-align: center;
+  100% {
+    opacity: 0;
   }
+}
 
-  ul,
-  .flag,
-  small {
-    margin: 20px 0;
-  }
+.taiwan_logo {
+  animation-name: taiwan_logo_loading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
 
-  .flag {
-    padding-top: 20px;
-  }
+/* jsでクラスloadedを付与　その後設定した要素を消す */
+.loaded {
+  opacity: 1;
+  visibility: hidden;
+}
 
-  ul {
-    list-style: none;
-    font-size: 12px;
+/* ここまで */
 
-  }
 
-  .footer_menu {
-    width: 200px;
-    margin: 0 auto;
-    text-align: left;
-  }
 
-  .footer_menu li {
-    border-bottom: 1px #fff solid;
-    padding-bottom: 8px;
-    padding-top: 12px;
-  }
 
-  .footer_menu li a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 7.5px;
-  }
+/* footer部分　css */
 
-  .sns_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+footer {
+  background: #0180BE;
+  text-align: center;
+}
 
-  .sns_link li {
-    margin-right: 20px;
-  }
+ul,
+.flag,
+small {
+  margin: 20px 0;
+}
 
-  .sns_link img {
-    width: 30px;
-  }
+.flag {
+  padding-top: 20px;
+}
 
-  small {
-    padding-bottom: 20px;
-  }
+ul {
+  list-style: none;
+  font-size: 12px;
+
+}
+
+.footer_menu {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer_menu li {
+  border-bottom: 1px #fff solid;
+  padding-bottom: 8px;
+  padding-top: 12px;
+}
+
+.footer_menu li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 7.5px;
+}
+
+.sns_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sns_link li {
+  margin-right: 20px;
+}
+
+.sns_link img {
+  width: 30px;
+}
+
+small {
+  padding-bottom: 20px;
+}
