@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Drawer Menu */
+/* ↓チェックボックスが OFF の場合 */
+/* nav 要素 画面上部に固定表示 */
+.gMenu {
+  /* 右上に固定・前面表示 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+/* input 要素 チェックボックスを非表示 */
+.menu-btn {
+  display: none;
+}
+
+/* label 要素 アイコン作成 */
+.menu-icon {
+  /* 右上に絶対配置 */
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  height: 20px;
+  padding-top: 5px;
+  /* ポインターの形状 指 */
+  cursor: pointer;
+  color: #fff;
+}
+
+/* span 要素 中央の線作成 */
+.navicon {
+  /* ブロックレベルへ変更 */
+  display: block;
+  /* 線の長さ */
+  width: 31px;
+  /* 線の太さ */
+  height: 2px;
+  /* 線の色 */
+  color: #fff;
+  color: #fff;
+  /* ::before と ::after の基準要素 */
+  position: relative;
+}
+
+/* 上と下の線作成 上下共通 */
+.navicon::before,
+.navicon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  /* 基準要素 span.navicon に対して絶対配置 */
+  position: absolute;
+  /* 三本線と X の切替えアニメーション 速く始まりゆっくり終わる */
+  transition: all .3s ease-out;
+}
+
+/* 下の線のみ */
+.navicon::before {
+  /* 上からの位置 */
+  top: 10px;
+}
+
+/* 上の線のみ */
+.navicon::after {
+  /* 上へ 10px の位置 */
+  top: -10px;
+}
+
+/* ul 要素 メニュー */
+.menu {
+  color: #fff;
+  background-color: #000;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 20px;
+  font-weight: bold;
+
+  border-bottom: 1px solid #fff;
+
+  margin-bottom: 48px;
+  text-align: center;
+  /* 非表示 */
+  overflow: hidden;
+  /* 最大の高さ */
+  max-height: 0;
+  /* 非表示の際のアニメーション */
+  transition: max-height 0.6s;
+
+
+}
+
+/* 1 つ目の li 要素 */
+.menu li:first-of-type {
+  padding-top: 50px;
+}
+
+/* a 要素 */
+.menu a {
+  display: block;
+  /* padding: 24px; */
+  margin-bottom: 28px;
+  text-decoration: none;
+
+}
+
+.menu a:hover {
+  background-color: #000;
+}
+
+/* ↓チェックボックスが ON の場合 */
+/* 非表示にしていた ul.menu を表示 */
+.menu-btn:checked~.menu {
+  max-height: inherit;
+  height: 100vh;
+  /* 元 0px */
+  /* 表示の際のアニメーション */
+  transition: max-height 0.5s;
+}
+
+/* 中央の線を非表示 */
+.menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+  /* ↑チェックボックスが OFF の場合 */
+
+}
+
+/* 上下の線を 45 度傾けて X アイコンを作成 */
+.menu-btn:checked~.menu-icon .navicon::before {
+  /* 反時計回りに回転 */
+  transform: rotate(-45deg);
+  top: 0;
+  /* 元 10px */
+}
+
+.menu-btn:checked~.menu-icon .navicon::after {
+  /* 時計回りに回転 */
+  transform: rotate(45deg);
+  top: 0;
+  /* 元 -10px */
+}
+
+img {
+  width: 100px;
+  height: 39.6px;
+
+}
