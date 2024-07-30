@@ -14,6 +14,8 @@
 /* 全体共通 */
 main {
   text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: var(--smfsize);
 }
 
 main section {
@@ -25,6 +27,29 @@ main h3 {
   font-size: var(--lgfsize);
 }
 
-main .into_top h3 {
+main h3 span {
+  font-size: var(--smfsize);
+}
+
+main img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* ふぉるもさ紹介部分 */
+main .introduction h3 {
   font-size: var(--mdfsize);
+}
+
+main .flg {
+  margin-bottom: var(--mdsp);
+}
+
+.into_top {
+  padding-bottom: var(--lgsp);
+}
+
+.formosa1 img {
+  height: 140px;
 }
