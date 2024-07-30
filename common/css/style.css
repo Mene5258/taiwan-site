@@ -17,12 +17,15 @@ h1 img {
   margin: 160px 20px 372px;
 }
 
-a.header_logo img {
-
-  position: fixed;
+.header_logo img {
   width: 100px;
   height: 39.6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
 }
+
 
 /* Drawer Menu */
 /* ↓チェックボックスが OFF の場合 */
@@ -105,10 +108,7 @@ a.header_logo img {
   /* ↑チェックボックスが OFF の場合 */
 }
 
-header img {
-  width: 100px;
-  height: 39.6px;
-}
+
 
 /* ローディングアニメーション */
 
