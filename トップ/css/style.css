@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+:root {
+  --bgcolor: #F4F4F4;
+  --fcolor: #000;
+  --smfsize: 12px;
+  --mdfsize: 20px;
+  --lgfsize: 30px;
+  --lgsp: 60px;
+  --mdsp: 40px;
+  --smsp: 20px
+}
+
+main section {
+  margin-bottom: var(--lgsp);
+}
+
+main h3 {
+  margin-bottom: var(--mdsp);
+  font-size: var(--lgfsize);
+}
+
+main .into_top h3 {
+  font-size: var(--mdfsize);
+}
