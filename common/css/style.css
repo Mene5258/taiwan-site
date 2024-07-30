@@ -299,6 +299,8 @@ small {
 }
 
 @media screen and (min-width:780px) {
+
+  /* footer */
   .wrapper {
     display: flex;
     justify-content: space-around;
@@ -341,6 +343,8 @@ small {
 }
 
 @media screen and (min-width:1024px) {
+
+  /* footer部分 */
   footer {
     display: grid;
     place-content: center;
