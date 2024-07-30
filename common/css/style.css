@@ -15,7 +15,6 @@ h1 img {
   width: 335px;
   height: 135px;
   margin: 160px 20px 372px;
-
 }
 
 /* Drawer Menu */
@@ -28,7 +27,6 @@ h1 img {
   right: 0;
   z-index: 99;
   width: 100%;
-
 }
 
 /* input 要素 チェックボックスを非表示 */
@@ -36,60 +34,18 @@ h1 img {
   display: none;
 }
 
-/* label 要素 アイコン作成 */
-.menu-icon {
+.gMenu img {
   /* 右上に絶対配置 */
   position: absolute;
-  right: 12px;
+  right: 5px;
   top: 16px;
   height: 48px;
   width: 48px;
-  border-radius: 50px;
   padding-top: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
 
   /* ポインターの形状 指 */
   cursor: pointer;
   color: #fff;
-}
-
-/* span 要素 中央の線作成 */
-.navicon {
-  /* ブロックレベルへ変更 */
-  display: block;
-  /* 線の長さ */
-  width: 45px;
-  /* 線の太さ */
-  height: 1px;
-  /* 線の色 */
-  color: #fff;
-  /* ::before と ::after の基準要素 */
-  position: relative;
-}
-
-/* 上と下の線作成 上下共通 */
-.navicon::before,
-.navicon::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  /* 基準要素 span.navicon に対して絶対配置 */
-  position: absolute;
-  /* 三本線と X の切替えアニメーション 速く始まりゆっくり終わる */
-  transition: all .3s ease-out;
-}
-
-/* 下の線のみ */
-.navicon::before {
-  /* 上からの位置 */
-  top: 10px;
-}
-
-/* 上の線のみ */
-.navicon::after {
-  /* 上へ 10px の位置 */
-  top: -10px;
 }
 
 /* ul 要素 メニュー */
@@ -99,9 +55,7 @@ h1 img {
   font-family: "Zen Kaku Gothic New";
   font-size: 20px;
   font-weight: bold;
-
   text-decoration: underline 0.3px;
-
   margin-bottom: 32px;
   text-align: center;
   /* 非表示 */
@@ -110,8 +64,6 @@ h1 img {
   max-height: 0;
   /* 非表示の際のアニメーション */
   transition: max-height 0.6s;
-
-
 }
 
 /* 1 つ目の li 要素 */
@@ -125,7 +77,6 @@ h1 img {
   /* padding: 24px; */
   margin-bottom: 28px;
   text-decoration: none;
-
 }
 
 .menu a:hover {
@@ -138,30 +89,11 @@ h1 img {
   max-height: inherit;
   height: 100vh;
   /* 元 0px */
-  /* 表示の際のアニメーション */
-  transition: max-height 0.5s;
 }
 
-/* 中央の線を非表示 */
-.menu-btn:checked~.menu-icon .navicon {
+.menu-btn:checked~.gMenu {
   background: transparent;
   /* ↑チェックボックスが OFF の場合 */
-
-}
-
-/* 上下の線を 45 度傾けて X アイコンを作成 */
-.menu-btn:checked~.menu-icon .navicon::before {
-  /* 反時計回りに回転 */
-  transform: rotate(-45deg);
-  top: 0;
-  /* 元 10px */
-}
-
-.menu-btn:checked~.menu-icon .navicon::after {
-  /* 時計回りに回転 */
-  transform: rotate(45deg);
-  top: 0;
-  /* 元 -10px */
 }
 
 img {
