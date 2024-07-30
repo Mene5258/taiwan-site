@@ -1,10 +1,8 @@
 'use strict'
 
-// ドロワーメニュー開いたときにロゴ表示
-const logo2 = () {
-  const logo2 = document.getElementById('open_logo');
-  logo2.onclick(logo2);
-}
+// トップページのみ非表示
+
+// }
 
 
 // ローディング用js
