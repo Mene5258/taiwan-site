@@ -28,6 +28,7 @@ h1 img {
   right: 0;
   z-index: 99;
   width: 100%;
+
 }
 
 /* input 要素 チェックボックスを非表示 */
@@ -98,7 +99,8 @@ h1 img {
   font-family: "Zen Kaku Gothic New";
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 1px #fff solid;
+
+  text-decoration: underline 0.3px;
 
   margin-bottom: 32px;
   text-align: center;
