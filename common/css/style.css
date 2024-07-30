@@ -34,7 +34,8 @@ h1 img {
   display: none;
 }
 
-.gMenu img {
+.gMenu img,
+.menu-icon {
   /* 右上に絶対配置 */
   position: absolute;
   right: 5px;
