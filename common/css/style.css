@@ -267,6 +267,7 @@ footer ul {
 
 .sns_link img {
   width: 30px;
+  object-fit: contain;
 }
 
 small {
