@@ -290,6 +290,8 @@ small {
   display: block;
   padding-bottom: 20px;
   text-transform: capitalize;
+  margin-bottom: 0;
+  font-size: 10px;
 }
 
 .pc_logo {
@@ -310,11 +312,16 @@ small {
 
   .pc_logo {
     flex-basis: 20%;
-    text-align: left;
-    visibility: show;
+    visibility: visible;
+    display: flex;
+    justify-content: left;
+    transform: translate(20px);
   }
 
-  .pc_logo img {}
+  .pc_logo img {
+    transform: scale(2.0);
+  }
+
 
 
   .sns_link {
@@ -322,7 +329,24 @@ small {
     margin: 0;
   }
 
+  .sns_link img {
+    width: 55px;
+  }
+
+  small {
+    font-size: 12px;
+  }
 
 
+}
 
+@media screen and (min-width:1024px) {
+  footer {
+    display: grid;
+    place-content: center;
+  }
+
+  .king_wrapper {
+    width: 1024px;
+  }
 }
