@@ -11,8 +11,13 @@
   --smsp: 20px
 }
 
+/* 全体共通 */
+main {
+  text-align: center;
+}
+
 main section {
-  margin-bottom: var(--lgsp);
+  margin: var(--lgsp) 0;
 }
 
 main h3 {
