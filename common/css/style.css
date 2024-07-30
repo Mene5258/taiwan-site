@@ -46,11 +46,10 @@
   /* ブロックレベルへ変更 */
   display: block;
   /* 線の長さ */
-  width: 31px;
+  width: 45px;
   /* 線の太さ */
-  height: 2px;
+  height: 1px;
   /* 線の色 */
-  color: #fff;
   color: #fff;
   /* ::before と ::after の基準要素 */
   position: relative;
@@ -88,10 +87,10 @@
   font-family: "Zen Kaku Gothic New";
   font-size: 20px;
   font-weight: bold;
-
+  text-decoration: underline;
   border-bottom: 1px solid #fff;
 
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   text-align: center;
   /* 非表示 */
   overflow: hidden;
