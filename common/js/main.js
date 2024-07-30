@@ -1,5 +1,12 @@
 'use strict'
 
+// ドロワーメニュー開いたときにロゴ表示
+const logo2 = () {
+  const logo2 = document.getElementById('open_logo');
+  logo2.onclick(logo2);
+}
+
+
 // ローディング用js
 
 // 4秒後にfigure要素にクラスloadedを追加する
