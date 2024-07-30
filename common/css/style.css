@@ -17,6 +17,13 @@ h1 img {
   margin: 160px 20px 372px;
 }
 
+a.header_logo img {
+
+  position: fixed;
+  width: 100px;
+  height: 39.6px;
+}
+
 /* Drawer Menu */
 /* ↓チェックボックスが OFF の場合 */
 /* nav 要素 画面上部に固定表示 */
@@ -69,14 +76,15 @@ h1 img {
 
 /* 1 つ目の li 要素 */
 .menu li:first-of-type {
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 /* a 要素 */
 .menu a {
   display: block;
-  /* padding: 24px; */
+  /* padding-top: 24px; */
   margin-bottom: 28px;
+  margin-top: 32px;
   text-decoration: none;
 }
 
