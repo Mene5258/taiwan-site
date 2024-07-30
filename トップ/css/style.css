@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+:root {
+  --bgcolor: #F4F4F4;
+  --fcolor: #000;
+  --smfsize: 12px;
+  --mdfsize: 20px;
+  --lgfsize: 30px;
+  --lgsp: 60px;
+  --mdsp: 40px;
+  --smsp: 20px
+}
+
+/* 全体共通 */
+main {
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: var(--smfsize);
+}
+
+main section {
+  margin: var(--lgsp) 0;
+}
+
+main h3 {
+  margin-bottom: var(--mdsp);
+  font-size: var(--lgfsize);
+}
+
+main h3 span {
+  font-size: var(--smfsize);
+}
+
+main img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* ふぉるもさ紹介部分 */
+main .introduction h3 {
+  font-size: var(--mdfsize);
+}
+
+main .flg {
+  margin-bottom: var(--mdsp);
+}
+
+.into_top {
+  padding-bottom: var(--lgsp);
+}
+
+.formosa1 img {
+  height: 140px;
+}
