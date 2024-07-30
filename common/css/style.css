@@ -228,6 +228,7 @@ img {
 footer {
   background: #0180BE;
   text-align: center;
+  color: #fff;
 }
 
 ul,
@@ -240,10 +241,10 @@ small {
   padding-top: 20px;
 }
 
-ul {
+footer ul {
   list-style: none;
   font-size: 12px;
-
+  padding-left: 0px;
 }
 
 .footer_menu {
@@ -276,8 +277,14 @@ ul {
 
 .sns_link img {
   width: 30px;
+  object-fit: contain;
 }
 
 small {
   padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+span {
+  text-transform: uppercase;
 }
