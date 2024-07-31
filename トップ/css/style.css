@@ -8,7 +8,11 @@
   --lgfsize: 30px;
   --lgsp: 60px;
   --mdsp: 40px;
-  --smsp: 20px
+  --smsp: 20px;
+  --pclf: 48px;
+  --pcmf: 32px;
+  --pcmsp: 80px;
+  --pclsp: 120px;
 }
 
 /* 全体共通 */
@@ -16,19 +20,42 @@ main {
   text-align: center;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: var(--smfsize);
+  background-color: var(--bgcolor);
 }
 
 main section {
-  margin: var(--lgsp) 0;
+  padding-top: var(--lgsp);
 }
 
 main h3 {
   margin-bottom: var(--mdsp);
   font-size: var(--lgfsize);
+  text-transform: capitalize;
 }
 
 main h3 span {
   font-size: var(--smfsize);
+}
+
+
+main p {
+  margin: 0 auto;
+  width: 60vw;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid var(--fcolor);
+  border-bottom: 1px solid var(--fcolor);
+  margin-bottom: var(--smsp);
+}
+
+.gallery h3,
+.travel h3,
+.event h3,
+.basic_info h3 {
+  display: inline-block;
+  padding: 8px var(--mdsp);
+  background: url(../images/hedding_line.png) bottom center/contain no-repeat;
 }
 
 main img {
@@ -38,18 +65,361 @@ main img {
 
 
 /* ふぉるもさ紹介部分 */
+.introduction {
+  padding: 0;
+
+}
+
 main .introduction h3 {
   font-size: var(--mdfsize);
+}
+
+.introduction img {
+  height: 140px;
 }
 
 main .flg {
   margin-bottom: var(--mdsp);
 }
 
-.into_top {
-  padding-bottom: var(--lgsp);
+main .flg img {
+  width: 24px;
+  height: 35px;
 }
 
-.formosa1 img {
-  height: 140px;
+.int_top {
+  padding-bottom: var(--lgsp);
+  padding-top: var(--lgsp);
+  background: url(../images/formosa1_bg.jpg) no-repeat left top/cover;
+}
+
+
+.int_top h3 span {
+  display: inline-block;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--fcolor);
+}
+
+.int_bottom {
+  background: url(../images/formosa2_bg.jpg) no-repeat left top/cover;
+  padding-bottom: var(--lgsp);
+  padding-top: var(--lgsp);
+}
+
+/* map */
+.map {
+  margin-top: var(--smsp);
+}
+
+.travel img {
+  width: 64vw;
+}
+
+/* event */
+.event h4 {
+  font-size: var(--mdfsize);
+}
+
+.event img {
+  width: 335px;
+  margin-bottom: var(--smsp);
+  margin-top: var(--smsp);
+}
+
+.event_period,
+.event_date {
+  border: none;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.event_period {
+  font-weight: bold;
+}
+
+.event_date {
+  margin-bottom: var(--smsp);
+}
+
+.event_tan,
+.event_count {
+  padding: 0;
+}
+
+.event_tan {
+  margin-bottom: var(--mdsp);
+}
+
+.event_info {
+  margin-bottom: 0;
+}
+
+/* 台湾基本情報 */
+.basic_info {
+  padding-bottom: 60px;
+}
+
+.basic_info dl {
+  margin: 0 auto;
+  text-align: left;
+  width: 79vw;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  font-size: 3vw;
+}
+
+.basic_info dt span {
+  padding-left: 4px;
+}
+
+
+
+.dl_big dt:nth-child(9) {
+  flex-basis: 30%;
+}
+
+.dl_big dd:nth-child(10) {
+  flex-basis: 70%;
+}
+
+.basic_info dt {
+  flex-basis: 25%;
+  list-style-type: square;
+  display: list-item;
+  color: var(--fcolor);
+  list-style-position: inside;
+}
+
+.basic_info dd {
+  flex-basis: 65%;
+}
+
+.basic_info .big_item {
+  flex-basis: 100%;
+}
+
+.basic_info .big_item dt {
+  flex-basis: 100%;
+}
+
+.big_item:nth-child(2n) {
+  padding-left: 1rem;
+}
+
+.dl_celeblate {
+  display: flex;
+  flex-wrap: wrap;
+  text-indent: 1rem;
+}
+
+.big_item .dl_celeblate dt {
+  list-style-type: none;
+  flex-basis: 22%;
+  font-weight: 400;
+}
+
+.big_item .dl_celeblate dd {
+  flex-basis: 78%;
+}
+
+@media screen and (min-width:379px) {
+  .basic_info dt {
+    flex-basis: 25%;
+  }
+
+  .basic_info dd {
+    flex-basis: 75%;
+  }
+}
+
+@media screen and (min-width:780px) {
+
+  /* 全体 */
+  main {
+    font-size: var(--mdfsize);
+    text-align: start;
+  }
+
+  main h3 {
+    font-size: var(--pclf);
+  }
+
+  main h3 span {
+    font-size: var(--pcmf);
+  }
+
+  main section {
+    padding-top: var(--pclsp);
+  }
+
+  main p {
+    width: 30vw;
+  }
+
+  main h3 {
+    margin-bottom: var(--pcmsp);
+  }
+
+  .gallery h3,
+  .travel h3,
+  .event h3,
+  .basic_info h3 {
+    padding: 24px var(--lgsp);
+  }
+
+  .gallery h3,
+  .event h3 {
+
+    margin-left: 7vw;
+
+  }
+
+
+
+
+  /* introduction */
+  .introduction {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .introduction img {
+    height: 40vh;
+  }
+
+  main .introduction h3 {
+    font-size: 3vw;
+  }
+
+  .int_top,
+  .int_bottom {
+    padding-top: var(--pcmsp);
+    padding-bottom: var(--pcmsp);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .int_top {
+    background: url(../images/pc_formosa_bg1.jpg) no-repeat left top/cover;
+
+  }
+
+  .int_top .flg {
+    transform: translateX(170%);
+    display: block;
+    width: 10vw;
+  }
+
+  .int_top .flg img {
+    width: 10vw;
+    display: inline;
+  }
+
+  .int_top h3 {
+    text-align: left;
+  }
+
+  .int_top h3 span {
+    border: none;
+  }
+
+  .flex_pc,
+  .int_bottom p {
+    flex-basis: 35%;
+  }
+
+  .formasa1,
+  .formasa2 {
+    flex-basis: 40%;
+  }
+
+  .int_bottom {
+    background: url(../images/pc_formosa_bg2.jpg) no-repeat left top/cover;
+
+  }
+
+  .int_bottom p {
+    margin: 0;
+  }
+
+  /* gallery */
+
+
+  /* taravel */
+  .travel {
+    text-align: right;
+  }
+
+  .travel h3 {
+    margin-right: 7vw;
+  }
+
+  .travel_flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .travel_flex p {
+    margin: 0;
+    align-self: center;
+  }
+
+  .travel img {
+    width: 30vw;
+  }
+
+  /* event */
+
+
+  .event_tan,
+  .event_count {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: flex-start;
+  }
+
+  .event h4 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .event img {
+    width: 42vw;
+  }
+
+  .event_time {
+    align-self: center;
+  }
+
+  .event p {
+    margin-bottom: 40px;
+  }
+
+  /* 台湾基本情報 */
+  .basic_info {
+    text-align: center;
+  }
+
+
+  .basic_info dl {
+    font-size: var(--smsp);
+  }
+
+  .basic_info dt {
+    flex-basis: 16%;
+  }
+
+  .basic_info dd {
+    flex-basis: 84%;
+  }
+
+  .dl_big {
+    border: 2px solid var(--fcolor);
+    padding: var(--mdsp);
+  }
 }
