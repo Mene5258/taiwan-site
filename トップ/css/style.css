@@ -16,19 +16,42 @@ main {
   text-align: center;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: var(--smfsize);
+  background-color: var(--bgcolor);
 }
 
 main section {
-  margin: var(--lgsp) 0;
+  padding-top: var(--lgsp);
 }
 
 main h3 {
   margin-bottom: var(--mdsp);
   font-size: var(--lgfsize);
+  text-transform: capitalize;
 }
 
 main h3 span {
   font-size: var(--smfsize);
+}
+
+
+main p {
+  margin: 0 auto;
+  width: 60vw;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid var(--fcolor);
+  border-bottom: 1px solid var(--fcolor);
+  margin-bottom: var(--smsp);
+}
+
+.gallery h3,
+.travel h3,
+.event h3,
+.basic_info h3 {
+  display: inline-block;
+  padding: 8px var(--mdsp);
+  background: url(../images/hedding_line.png) bottom center/contain no-repeat;
 }
 
 main img {
@@ -38,18 +61,153 @@ main img {
 
 
 /* ふぉるもさ紹介部分 */
+.introduction {
+  padding: 0;
+
+}
+
 main .introduction h3 {
   font-size: var(--mdfsize);
+}
+
+.introduction img {
+  height: 140px;
 }
 
 main .flg {
   margin-bottom: var(--mdsp);
 }
 
-.into_top {
-  padding-bottom: var(--lgsp);
+main .flg img {
+  width: 24px;
+  height: 35px;
 }
 
-.formosa1 img {
-  height: 140px;
+.int_top {
+  padding-bottom: var(--lgsp);
+  padding-top: var(--lgsp);
+  background: url(../images/formosa1_bg.jpg) no-repeat left top/cover;
+}
+
+
+.int_top h3 span {
+  display: inline-block;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--fcolor);
+}
+
+.int_bottom {
+  background: url(../images/formosa2_bg.jpg) no-repeat left top/cover;
+  padding-bottom: var(--lgsp);
+  padding-top: var(--lgsp);
+}
+
+/* map */
+.map {
+  margin-top: var(--smsp);
+}
+
+.travel img {
+  width: 64vw;
+}
+
+/* event */
+.event h4 {
+  font-size: var(--mdfsize);
+}
+
+.event img {
+  width: 335px;
+  margin-bottom: var(--smsp);
+  margin-top: var(--smsp);
+}
+
+.event_period,
+.event_date {
+  border: none;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.event_period {
+  font-weight: bold;
+}
+
+.event_date {
+  margin-bottom: var(--smsp);
+}
+
+.event_tan,
+.event_count {
+  padding: 0;
+}
+
+.event_tan {
+  margin-bottom: var(--mdsp);
+}
+
+.event_info {
+  margin-bottom: 0;
+}
+
+/* 台湾基本情報 */
+.basic_info {
+  padding-bottom: 60px;
+}
+
+.basic_info dl {
+  margin: 0 auto;
+  text-align: left;
+  width: 79vw;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  font-size: 3vw;
+}
+
+.basic_info dt span {
+  padding-left: 4px;
+}
+
+.dl_big dt:nth-child(9) {
+  flex-basis: 22%;
+}
+
+.dl_big dd:nth-child(10) {
+  flex-basis: 78%;
+}
+
+.basic_info dt {
+  flex-basis: 10%;
+  list-style-type: square;
+  display: list-item;
+  color: var(--fcolor);
+}
+
+.basic_info dd {
+  flex-basis: 90%;
+}
+
+.basic_info .big_item {
+  flex-basis: 100%;
+}
+
+.basic_info .big_item dt {
+  flex-basis: 100%;
+}
+
+.dl_celeblate {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big_item .dl_celeblate dt {
+  list-style-type: none;
+  flex-basis: 22%;
+  font-weight: 400;
+}
+
+.big_item .dl_celeblate dd {
+  flex-basis: 78%;
 }
