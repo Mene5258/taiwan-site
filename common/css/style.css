@@ -244,6 +244,10 @@ small {
   visibility: hidden;
 }
 
+.pc_logo img {
+  width: 20vw;
+}
+
 @media screen and (min-width:780px) {
 
   /* footer */
@@ -263,11 +267,12 @@ small {
     visibility: visible;
     display: flex;
     justify-content: left;
-    transform: translate(20px);
   }
 
 
-
+  .pc_logo img {
+    transform: translateX(-20px);
+  }
 
   .sns_link {
     flex-basis: 18%;
