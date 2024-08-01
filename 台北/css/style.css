@@ -17,7 +17,7 @@
   width: 100px;
   height: 39.6px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -100,8 +100,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
-
 }
 
 .breadcrumb {
@@ -122,6 +120,95 @@
   color: #777;
   /* 記号の色 */
 }
+
+/* 共通指定 */
+p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+.at_1,
+.at_2 {
+  padding: 20px 16px;
+  background-color: rgba(108, 186, 216, 0.2);
+  margin: 20px 40px;
+  text-align: left;
+
+
+
+
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  background-image: url(../images/taipei_harffm.png) no-repeat center / cover;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 15px;
+
+
+}
+
+.h3_image1 {
+  width: 295px;
+  height: 180px;
+  text-align: center;
+
+}
+
+.h3_image2 {
+  width: 295px;
+  height: 118px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  display: flex;
+}
+
+#attraction_sub,
+#attraction_101 {
+  display: flex;
+}
+
+.h3_image3 {
+  width: 140px;
+  height: 225px;
+  margin-bottom: 20px;
+}
+
+.time {
+  text-align: center;
+}
+
+.side_by {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+li side:nth-child(2) {
+  margin: 0 10px;
+}
+
+
+
+
+
 
 
 /* footer部分　css */
