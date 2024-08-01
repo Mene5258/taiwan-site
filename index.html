@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="トップ/css/style.css">
   <title>TaiwanSite</title>
-  <script src="main.js"></script>
-  <script src="common/js/main.js"></script>
+
 </head>
 
 <body>
@@ -76,8 +75,27 @@
       </div>
     </section>
     <section class="gallery">
-      <h3>gallery&nbsp;<span>ギャラリ－</span></h3>
-      <div class="slider"></div>
+      <h2>gallery&nbsp;<span>ギャラリ－</span></h2>
+      <div class="slider">
+        <div>
+          <img src="トップ/images/top_slider1.jpg" alt="竜" id="main_image"><img src="トップ/images/top_slider2.jpg" alt="竜"
+            id="main_image2"><img src="トップ/images/top_slider3.jpg" alt="竜" id="main_image3">
+        </div>
+        <ul id="btn_line">
+          <li><input type="radio" id="sl1" name="sldbtn" checked><label for="sl1" class="slider_btn"
+              data-image="トップ/images/top_slider1.jpg"></label></li>
+          <li>
+            <input type="radio" id="sl2" name="sldbtn"><label for="sl2" class="slider_btn"
+              data-image="トップ/images/top_slider2.jpg"></label>
+          </li>
+          <li><input type="radio" id="sl3" name="sldbtn"><label for="sl3" class="slider_btn"
+              data-image="トップ/images/top_slider3.jpg"></label></li>
+          <li><input type="radio" id="sl4" name="sldbtn"><label for="sl4" class="slider_btn"
+              data-image="トップ/images/top_slider4.jpg"></label></li>
+          <li><input type="radio" id="sl5" name="sldbtn"><label for="sl5" class="slider_btn"
+              data-image="トップ/images/top_slider5.jpg"></label></li>
+        </ul>
+      </div>
     </section>
     <section class="travel">
       <h2>travel&nbsp;<span>おすすめスポット</span></h2>
@@ -189,6 +207,9 @@
       <small>copyright (C) <span class="tm_upper">taiwan</span> traveler </small>
     </div>
   </footer>
+
+  <script src="トップ/js/main.js"></script>
+  <script src="common/js/main.js"></script>
 </body>
 
 </html>

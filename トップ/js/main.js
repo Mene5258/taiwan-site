@@ -1,12 +1,19 @@
 'use strict'
 
-// ローディング用js
+const btn = document.querySelectorAll('.slider_btn');
 
-// 4秒後にfigure要素にクラスloadedを追加する
-const taiwan_logo = function () {
-  const taiwan_logo = document.getElementById('loading');
-  taiwan_logo.classList.add('loaded');
+
+if (window.matchMedia("(max-width: 780px)").matches) {
+  btn.forEach(function (item) {
+    item.onclick = function () {
+      document.getElementById('main_image').src = this.dataset.image;
+    }
+  });
+} else {
+  btn.forEach(function (item, index) {
+    item.onclick = function () {
+      document.getElementById('main_image').src = this.dataset.image;
+    }
+  });
+
 }
-setTimeout(taiwan_logo, 4000);
-
-// ローディング用jsここまで
