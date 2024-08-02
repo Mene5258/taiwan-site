@@ -154,11 +154,38 @@ input[type=radio]:checked+label {
 /* map */
 .map {
   margin-top: var(--smsp);
+  position: relative;
+  margin: 0 auto;
 }
 
-.travel img {
-  width: 64vw;
+.map_base {
+  z-index: -1;
+  width: 64%;
 }
+
+.mini_name {
+  width: 13%;
+  position: absolute;
+}
+
+#map_taipei {
+  top: 5%;
+  right: 15%;
+}
+
+#map_taichu {
+  top: 25%;
+  left: 20%;
+}
+
+#map_tainan {
+  top: 80%;
+  right: 50%;
+}
+
+
+
+
 
 /* event */
 .event h3 {
@@ -407,6 +434,20 @@ input[type=radio]:checked+label {
 
   .travel img {
     width: 30vw;
+  }
+
+  .travel .mini_name {
+    width: 23%;
+  }
+
+  #map_taipei {
+    top: 5%;
+    right: -8%;
+  }
+
+  #map_taichu {
+    top: 25%;
+    left: 0;
   }
 
   /* event */

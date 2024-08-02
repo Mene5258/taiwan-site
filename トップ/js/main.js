@@ -17,3 +17,11 @@ if (window.matchMedia("(max-width: 780px)").matches) {
   });
 
 }
+
+// 画像をクリックしたら、各ページに飛ぶ
+const jump = document.querySelectorAll('.mini_name');
+jump.forEach(function (item) {
+  item.onclick = function () {
+    location.href = this.dataset.href;
+  }
+});
