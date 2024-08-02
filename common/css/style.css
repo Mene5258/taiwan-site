@@ -215,6 +215,7 @@ span {
   color: #fff;
   text-decoration: none;
   margin-left: 7.5px;
+  display: block;
 }
 
 .sns_link {
@@ -265,6 +266,17 @@ small {
     font-size: 20px;
   }
 
+  .footer_menu li:hover {
+    font-weight: bold;
+    transform: translateX(10px);
+    border-bottom: 1px #6CBAD8 solid;
+  }
+
+  .footer_menu li a:hover {
+    color: #EDA184;
+
+  }
+
   .pc_logo {
     flex-basis: 20%;
     visibility: visible;
@@ -284,6 +296,11 @@ small {
 
   .sns_link img {
     width: 55px;
+  }
+
+  .sns_link li:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in;
   }
 
   small {

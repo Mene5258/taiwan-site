@@ -113,8 +113,7 @@ main .flg img {
 }
 
 .slider img {
-  height: 300px;
-
+  width: 100%;
 }
 
 #main_image2,
@@ -124,12 +123,13 @@ main .flg img {
 
 #btn_line {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: var(--smsp);
 }
 
 .slider li {
-  margin-right: var(--mdsp);
+  margin-right: var(--smsp);
+  margin-left: var(--smsp);
 
 }
 
@@ -406,6 +406,9 @@ input[type=radio]:checked+label {
     justify-content: space-evenly;
   }
 
+  .slider img {
+    width: 30%;
+  }
 
 
   #main_image2,
@@ -438,6 +441,13 @@ input[type=radio]:checked+label {
 
   .travel .mini_name {
     width: 23%;
+  }
+
+  .travel .mini_name:hover {
+
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform ease-in 0.3s;
   }
 
   #map_taipei {
