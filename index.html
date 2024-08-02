@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="common/css/destyle.css">
-  <link rel="stylesheet" href="common/css/style.css">
+  <!-- <link rel="stylesheet" href="common/css/style.css"> -->
   <link rel="stylesheet" href="トップ/css/style.css">
   <title>TaiwanSite</title>
 
@@ -77,11 +77,14 @@
     <section class="gallery">
       <h2>gallery&nbsp;<span>ギャラリ－</span></h2>
       <div class="slider">
-        <div>
+        <div class="contents">
           <img src="トップ/images/top_slider1.jpg" alt="竜" id="main_image"><img src="トップ/images/top_slider2.jpg" alt="竜"
-            id="main_image2"><img src="トップ/images/top_slider3.jpg" alt="竜" id="main_image3">
+            id="main_image2"><img src="トップ/images/top_slider3.jpg" alt="竜" id="main_image3"><img
+            src="トップ/images/top_slider4.jpg" alt="竜" id="main_image4"><img src="トップ/images/top_slider5.jpg" alt="竜"
+            id="main_image5">
         </div>
         <ul id="btn_line">
+          <li id="pre_btn" class="slider_btn"></li>
           <li><input type="radio" id="sl1" name="sldbtn" checked><label for="sl1" class="slider_btn"
               data-image="トップ/images/top_slider1.jpg"></label></li>
           <li>
@@ -94,6 +97,8 @@
               data-image="トップ/images/top_slider4.jpg"></label></li>
           <li><input type="radio" id="sl5" name="sldbtn"><label for="sl5" class="slider_btn"
               data-image="トップ/images/top_slider5.jpg"></label></li>
+          <li id="next" class="slider_btn"></li>
+
         </ul>
       </div>
     </section>
@@ -220,7 +225,7 @@
   </footer>
 
   <script src="トップ/js/main.js"></script>
-  <script src="common/js/main.js"></script>
+  <!-- <script src="common/js/main.js"></script> -->
 </body>
 
 </html>
