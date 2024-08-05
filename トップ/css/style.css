@@ -239,6 +239,7 @@ input[type=radio]:checked+label {
 .dl_big {
   width: 70%;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .dl_big dt::after {
@@ -522,18 +523,28 @@ input[type=radio]:checked+label {
     justify-content: space-evenly;
   }
 
-  .travel_flex p {
-    margin: 0;
+  .travel .travel_ex {
+    flex-basis: 50%;
     align-self: center;
   }
 
-  .travel img {
-    width: 30vw;
+  .travel_flex p {
+    width: 50%;
+
   }
 
+  .travel_flex .map {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  /* .travel img {
+    width: 30vw;
+  } */
+  /* 
   .travel .mini_name {
     width: 23%;
-  }
+  } */
 
   .travel .mini_name:hover {
 
@@ -544,13 +555,15 @@ input[type=radio]:checked+label {
 
   #map_taipei {
     top: 5%;
-    right: -8%;
+    right: 15%;
   }
 
   #map_taichu {
     top: 25%;
-    left: 0;
+    left: 20%;
   }
+
+
 
   /* event */
 
@@ -571,15 +584,26 @@ input[type=radio]:checked+label {
   }
 
   .event img {
-    width: 42vw;
+    width: 100%;
+  }
+
+  .event_picture {
+    flex-basis: 55%;
+
   }
 
   .event_time {
     align-self: center;
+    flex-basis: 45%;
+  }
+
+  .event .event_date {
+    width: 100%;
   }
 
   .event p {
     margin-bottom: 40px;
+    width: 70%;
   }
 
   /* 台湾基本情報 */
@@ -602,8 +626,11 @@ input[type=radio]:checked+label {
 
 @media screen and (min-width:1024px) {
 
-  main section {
-    width: 1024px;
+  main {}
+
+  .main_wrapper {
     margin: 0 auto;
+
+    width: 1024px;
   }
 }

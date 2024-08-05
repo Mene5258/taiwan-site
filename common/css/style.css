@@ -163,6 +163,74 @@ h1 img {
 
 /* ここまで */
 
+/* モーダル */
+dialog {
+  height: 100vh;
+  width: 100vw;
+  background: #0180be;
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  padding: 8px;
+}
+
+dialog button img {
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+
+/* topボタン */
+.btn_sp {
+  background: #f4f4f4;
+  height: 88px;
+}
+
+.btn_king_wrapper {
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.top_go {
+  margin: 20px;
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background: #00000050;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.top_go::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  position: absolute;
+  top: 35%;
+  right: 30%;
+  transform: rotate(45deg);
+  border-radius: 20%;
+}
+
+.top_go a {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 
 
 
@@ -249,6 +317,8 @@ small {
   width: 120%;
 }
 
+
+
 @media screen and (min-width:768px) {
 
   /* footer */
@@ -307,7 +377,17 @@ small {
     font-size: 12px;
   }
 
+  /* 上に戻りボタン */
+  .top_go:hover {
+    background: #000;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in;
+  }
 
+  /* modal */
+  dialog section {
+    display: flex;
+  }
 }
 
 @media screen and (min-width:1024px) {
