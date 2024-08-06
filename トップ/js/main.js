@@ -63,7 +63,7 @@ function nextmove() {
     contents.classList.add('contents5');
     btn5.checked = true;
 
-  } else {
+  } else if ((btn5.checked === true)) {
     contents.classList.remove('contents5');
     contents.classList.add('contents1');
     btn1.checked = true;
@@ -71,7 +71,44 @@ function nextmove() {
 
 }
 
+// インジケーターをクリックしてもうごけるように
 
+function click1() {
+  contents.classList.remove('contents2');
+  contents.classList.remove('contents3');
+  contents.classList.remove('contents4');
+  contents.classList.remove('contents5');
+  contents.classList.add('contents1');
+}
+
+function click2() {
+  contents.classList.remove('contents1');
+  contents.classList.remove('contents3');
+  contents.classList.remove('contents4');
+  contents.classList.remove('contents5');
+  contents.classList.add('contents2');
+}
+
+function click3() {
+  contents.classList.remove('contents1');
+  contents.classList.remove('contents2');
+  contents.classList.remove('contents4');
+  contents.classList.remove('contents5');
+  contents.classList.add('contents3');
+} function click4() {
+  contents.classList.remove('contents1');
+  contents.classList.remove('contents3');
+  contents.classList.remove('contents2');
+  contents.classList.remove('contents5');
+  contents.classList.add('contents4');
+}
+function click5() {
+  contents.classList.remove('contents1');
+  contents.classList.remove('contents3');
+  contents.classList.remove('contents4');
+  contents.classList.remove('contents2');
+  contents.classList.add('contents5');
+}
 
 
 if (window.matchMedia("(max-width: 768px)").matches) {
@@ -82,10 +119,31 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     }
   });
 } else {
+  const dialog = document.querySelector('dialog');
+  const openbtn = document.querySelectorAll('.modal_img');
   prebtn.addEventListener('click', premove);
   nextbtn.addEventListener('click', nextmove);
+  btn1.addEventListener('click', click1);
+  btn2.addEventListener('click', click2);
+  btn3.addEventListener('click', click3);
+  btn4.addEventListener('click', click4);
+  btn5.addEventListener('click', click5);
 
+  openbtn.forEach(function (item) {
+    item.onclick = function () {
+      document.getElementById('modal_main').src = this.dataset.image;
 
+      dialog.show();
+
+    }
+
+  }
+  );
+
+  const closebtn = document.getElementById('closebtn');
+  closebtn.onclick = function () {
+    dialog.close();
+  };
 }
 
 
@@ -97,3 +155,4 @@ jump.forEach(function (item) {
     location.href = this.dataset.href;
   }
 });
+
