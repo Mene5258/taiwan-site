@@ -106,14 +106,90 @@ main .flg img {
   padding-top: var(--lgsp);
 }
 
-/* map */
-.map {
+/* gallery */
+.slider {
+  margin: 0 auto;
+  width: 83%;
+}
+
+.slider img {
+  width: 100%;
+}
+
+#main_image2,
+#main_image3,
+#pre,
+#next,
+#main_image4,
+#main_image5 {
+  display: none;
+}
+
+#btn_line {
+  display: flex;
+  justify-content: space-evenly;
   margin-top: var(--smsp);
 }
 
-.travel img {
-  width: 64vw;
+.slider li {
+  margin-right: var(--smsp);
+  margin-left: var(--smsp);
+
 }
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked+label {
+  background-color: var(--fcolor);
+
+}
+
+.slider li label {
+  display: block;
+  background-color: #0000004b;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+
+/* map */
+.map {
+  margin-top: var(--smsp);
+  position: relative;
+  margin: 0 auto;
+}
+
+.map_base {
+  z-index: -1;
+  width: 64%;
+}
+
+.mini_name {
+  width: 13%;
+  position: absolute;
+}
+
+#map_taipei {
+  top: 5%;
+  right: 15%;
+}
+
+#map_taichu {
+  top: 25%;
+  left: 20%;
+}
+
+#map_tainan {
+  top: 80%;
+  right: 50%;
+}
+
+
+
+
 
 /* event */
 .event h3 {
@@ -161,8 +237,9 @@ main .flg img {
 }
 
 .dl_big {
-  width: 78vw;
+  width: 70%;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .dl_big dt::after {
@@ -217,7 +294,7 @@ main .flg img {
 
 
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:768px) {
 
   /* 全体 */
   main {
@@ -238,7 +315,7 @@ main .flg img {
   }
 
   main p {
-    width: 30vw;
+    width: 30%;
   }
 
   main h2 {
@@ -269,7 +346,7 @@ main .flg img {
   }
 
   .introduction img {
-    height: 40vh;
+    width: 130%;
   }
 
   main .introduction h2 {
@@ -329,6 +406,107 @@ main .flg img {
   }
 
   /* gallery */
+  .slider .contents {
+    max-width: 220vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .slider {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 30%;
+    margin-right: 50px;
+  }
+
+
+  .contents1 {
+    transform: translateX(0);
+    transition: all 0.3s ease-in;
+  }
+
+  .contents2 {
+    transform: translateX(-30%);
+    transition: all 0.3s ease-in;
+
+  }
+
+  .contents3 {
+    transform: translateX(-70%);
+    transition: all 0.3s ease-in;
+
+  }
+
+  .contents4 {
+    transform: translateX(-105%);
+    transition: all 0.3s ease-in;
+
+  }
+
+  .contents5 {
+    transform: translateX(-10%);
+    transition: all 0.3s ease-in;
+
+  }
+
+  #main_image2,
+  #main_image3,
+  #main_image4,
+  #main_image5 {
+    display: block;
+  }
+
+  .slider li {
+    display: grid;
+    place-items: center;
+  }
+
+  .slider li label {
+    width: 28px;
+    height: 28px;
+  }
+
+  #pre_btn,
+  #next {
+    display: block;
+    background-color: #0000004b;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  #pre_btn::after,
+  #next::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid var(--bgcolor);
+    border-bottom: 5px solid var(--bgcolor);
+    position: absolute;
+    top: 20px;
+    right: 22px;
+  }
+
+  #pre_btn:hover,
+  #next:hover {
+    background: #0180BE;
+    transition: all ease 0.2s;
+    cursor: pointer;
+  }
+
+  #pre_btn::after {
+    transform: rotate(45deg);
+  }
+
+  #next::after {
+    transform: rotate(-135deg);
+
+  }
 
 
   /* taravel */
@@ -345,14 +523,47 @@ main .flg img {
     justify-content: space-evenly;
   }
 
-  .travel_flex p {
-    margin: 0;
+  .travel .travel_ex {
+    flex-basis: 50%;
     align-self: center;
   }
 
-  .travel img {
-    width: 30vw;
+  .travel_flex p {
+    width: 50%;
+
   }
+
+  .travel_flex .map {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  /* .travel img {
+    width: 30vw;
+  } */
+  /* 
+  .travel .mini_name {
+    width: 23%;
+  } */
+
+  .travel .mini_name:hover {
+
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform ease-in 0.3s;
+  }
+
+  #map_taipei {
+    top: 5%;
+    right: 15%;
+  }
+
+  #map_taichu {
+    top: 25%;
+    left: 20%;
+  }
+
+
 
   /* event */
 
@@ -364,6 +575,7 @@ main .flg img {
     justify-content: space-evenly;
     align-self: center;
     align-items: flex-start;
+    margin: 0 var(--lgsp);
   }
 
   .event h3 {
@@ -372,15 +584,26 @@ main .flg img {
   }
 
   .event img {
-    width: 42vw;
+    width: 100%;
+  }
+
+  .event_picture {
+    flex-basis: 55%;
+
   }
 
   .event_time {
     align-self: center;
+    flex-basis: 45%;
+  }
+
+  .event .event_date {
+    width: 100%;
   }
 
   .event p {
     margin-bottom: 40px;
+    width: 70%;
   }
 
   /* 台湾基本情報 */
@@ -397,5 +620,17 @@ main .flg img {
   .dl_big {
     border: 2px solid var(--fcolor);
     padding: var(--mdsp);
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  main {}
+
+  .main_wrapper {
+    margin: 0 auto;
+
+    width: 1024px;
   }
 }

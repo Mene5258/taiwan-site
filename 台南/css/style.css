@@ -1,0 +1,240 @@
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: 'Zen Kaku Gothic New';
+}
+
+h2 {
+  font-size: 24px;
+  background: url(../images/heading_line.png) no-repeat right center/cover;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 220px;
+  height: 40px;
+}
+
+.act {
+  margin-top: 40px;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sippo {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.logo3 {
+  width: 295px;
+  height: 221px;
+  padding-bottom: 20px;
+}
+
+.logo4 {
+  width: 140px;
+  height: 152px;
+  margin-right: 7.5px;
+}
+
+
+
+.logo5 {
+  width: 140px;
+  height: 152px;
+  margin-left: 7.5px;
+}
+
+.logo6 {
+  width: 295px;
+  height: 221px;
+  padding-bottom: 20px;
+}
+
+.logo7 {
+  width: 137px;
+  height: 150px;
+  margin-right: 7.5px;
+}
+
+.logo8 {
+  width: 137px;
+  height: 150px;
+  margin-left: 7.5px;
+}
+
+.logo9 {
+  width: 295px;
+  height: 130px;
+  padding-bottom: 20px;
+}
+
+.logo10 {
+  width: 295px;
+  height: 130px;
+  padding-bottom: 20px;
+}
+
+.logo11 {
+  width: 295px;
+  height: 130px;
+  padding-bottom: 20px;
+}
+
+.logo12 {
+  width: 295px;
+  height: 130px;
+  padding-bottom: 20px;
+}
+
+.logo13 {
+  width: 295px;
+  height: 205px;
+  margin-top: 20px;
+}
+
+.logo14 {
+  width: 295px;
+  height: 205px;
+  margin-top: 20px;
+}
+
+img {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+p {
+  /* width: 295px; */
+  font-size: 12px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: normal;
+  text-align: center;
+}
+
+.black {
+  background-color: rgba(100, 201, 156, 0.2);
+  width: 295px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 33.5px;
+}
+
+.black2 {
+  background-color: rgba(100, 201, 156, 0.2);
+  width: 295px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+.blue {
+  background-color: rgba(100, 201, 156, 0.2);
+  width: 295px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 16px;
+}
+
+.blue2 {
+  background-color: rgba(100, 201, 156, 0.2);
+  width: 295px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+.white {
+  width: 295px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+.white2 {
+  width: 295px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.btn {
+  border: 2px solid #EDA184;
+  width: 120px;
+  height: 36px;
+  margin: 0 0 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  border-top: solid 7px transparent;
+  /* border-right: solid transparent; */
+  border-bottom: solid 7px transparent;
+  border-left: solid 7px;
+  display: inline-block;
+  color: #EDA184;
+}
+
+.kakomi {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.hurigana {
+  padding: 8px 12px;
+}
+
+.himo {
+  width: 220px;
+  height: 40px;
+}
+
+.setume {
+  width: 225px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.hr {
+  width: 225px;
+  margin: 0 auto;
+}
+
+.hr2 {
+  width: 225px;
+  margin: 60px auto;
+}
