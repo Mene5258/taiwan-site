@@ -6,6 +6,7 @@ const openbtn = document.getElementById('otameshi');
 //各ページのhtmlから適切な要素を取得して、代入してもらえればokです。
 openbtn.onclick = function () {
   dialog.show();
+
 };
 
 const closebtn = document.getElementById('closebtn');

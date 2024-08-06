@@ -60,19 +60,29 @@
 
 
   <main>
+    <dialog class="dialog">
+      <button id="closebtn"><img src="common/images/mordal_close.png" alt=""></button>
 
-
+      <div class="modal_pic">
+        <img src="トップ/images/top_slider1.jpg" id="modal_main">
+      </div>
+    </dialog>
     <section class="introduction">
-      <div class="main_wrapper">
-        <div class="int_top">
+
+      <div class="int_top">
+        <div class="main_wrapper">
           <div class="flex_pc">
             <div class="flg"><img src="common/images/national_flag.svg" alt="国旗"></div>
-            <h3>formosa<br><span>フォルモサ（麗しの島）</span></h3>
+            <h2>formosa<br><span>フォルモサ（麗しの島）</span></h2>
           </div>
           <div class="formosa1"><img src="トップ/images/top_formosa1.jpg" alt="いい感じの紹介画像"></div>
         </div>
-        <div class="int_bottom">
-          <p>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+      </div>
+      <div class="int_bottom">
+        <div class="main_wrapper">
+          <div class="pa">
+            <p>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+          </div>
           <div class="formosa2"><img src="トップ/images/top_formosa2.jpg" alt="いい感じの紹介画像"></div>
         </div>
       </div>
@@ -83,10 +93,16 @@
         <h2>gallery&nbsp;<span>ギャラリ－</span></h2>
         <div class="slider">
           <div class="contents">
-            <img src="トップ/images/top_slider1.jpg" alt="竜" id="main_image"><img src="トップ/images/top_slider2.jpg" alt="竜"
-              id="main_image2"><img src="トップ/images/top_slider3.jpg" alt="竜" id="main_image3"><img
-              src="トップ/images/top_slider4.jpg" alt="竜" id="main_image4"><img src="トップ/images/top_slider5.jpg" alt="竜"
-              id="main_image5">
+            <img src="トップ/images/top_slider1.jpg" alt="竜" id="main_image" class="modal_img"
+              data-image="トップ/images/top_slider1.jpg">
+            <img src="トップ/images/top_slider2.jpg" alt="路面電車" id="main_image2" class="modal_img"
+              data-image="トップ/images/top_slider2.jpg">
+            <img src="トップ/images/top_slider3.jpg" alt="茶" id="main_image3" class="modal_img"
+              data-image="トップ/images/top_slider3.jpg">
+            <img src="トップ/images/top_slider4.jpg" alt="提灯" id="main_image4" class="modal_img"
+              data-image="トップ/images/top_slider4.jpg">
+            <img src="トップ/images/top_slider5.jpg" alt="路地" id="main_image5" class="modal_img"
+              data-image="トップ/images/top_slider5.jpg">
           </div>
           <ul id="btn_line">
             <li id="pre_btn" class="slider_btn"></li>
@@ -247,7 +263,6 @@
 
   <script src="トップ/js/main.js"></script>
   <script src="common/js/main.js"></script>
-  <script src="common/js/modal.js"></script>
 </body>
 
 </html>

@@ -110,6 +110,7 @@ h1 img {
 
 
 
+
 /* ローディングアニメーション */
 
 /* ロゴの位置、背景設定 */
@@ -165,7 +166,6 @@ h1 img {
 
 /* モーダル */
 dialog {
-  height: 100vh;
   width: 100vw;
   background: #0180be;
   z-index: 99;
@@ -175,16 +175,21 @@ dialog {
 }
 
 dialog button img {
-
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 0px;
+  transform: translate(-50%, -50%);
   width: 28px;
   height: 28px;
+  margin: 8px;
 }
 
 
 /* topボタン */
+html {
+  scroll-behavior: smooth;
+}
+
 .btn_sp {
   background: #f4f4f4;
   height: 88px;
@@ -310,7 +315,7 @@ small {
 }
 
 .pc_logo {
-  visibility: hidden;
+  display: none;
 }
 
 .pc_logo img {
@@ -334,6 +339,11 @@ small {
     flex-basis: 25%;
     margin: 0;
     font-size: 20px;
+  }
+
+  footer .flag img {
+    width: 64px;
+    height: 48px;
   }
 
   .footer_menu li:hover {
@@ -378,6 +388,35 @@ small {
   }
 
   /* 上に戻りボタン */
+  .btn_sp {
+    height: 240px;
+  }
+
+  .top_go {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in;
+
+
+  }
+
+  .top_go::before {
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    right: 35%;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+  }
+
+  .top_go a {
+    width: 100px;
+    height: 100px;
+
+  }
+
   .top_go:hover {
     background: #000;
     transform: translateY(-20px);
@@ -387,6 +426,16 @@ small {
   /* modal */
   dialog section {
     display: flex;
+  }
+
+  dialog button img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    margin: 8px;
   }
 }
 
