@@ -6,88 +6,15 @@
   font-style: normal;
 }
 
+body {
+  background-color: #f4f4f4;
+}
+
 #taipei {
   width: 100%;
   height: 667px;
   background: url(../images/taipei_.png) center / 53% auto no-repeat,
     url(../images/header_bg.jpg) no-repeat center/cover;
-}
-
-.header_logo img {
-  width: 100px;
-  height: 39.6px;
-  position: absolute;
-  top: 5px;
-  left: 0;
-}
-
-/* input 要素 チェックボックスを非表示 */
-.menu-btn {
-  display: none;
-}
-
-.gMenu img,
-.menu-icon {
-  /* 右上に絶対配置 */
-  position: absolute;
-  right: 5px;
-  top: 16px;
-  height: 48px;
-  width: 48px;
-  padding-top: 5px;
-
-  /* ポインターの形状 指 */
-  cursor: pointer;
-  color: #fff;
-}
-
-/* ul 要素 メニュー */
-.menu {
-  color: #fff;
-  background-color: #000;
-  font-family: "Zen Kaku Gothic New";
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: underline 0.3px;
-  margin-bottom: 32px;
-  text-align: center;
-  /* 非表示 */
-  overflow: hidden;
-  /* 最大の高さ */
-  max-height: 0;
-  /* 非表示の際のアニメーション */
-  transition: max-height 0.6s;
-}
-
-/* 1 つ目の li 要素 */
-.menu li:first-of-type {
-  padding-top: 120px;
-}
-
-/* a 要素 */
-.menu a {
-  display: block;
-  /* padding-top: 24px; */
-  margin-bottom: 28px;
-  margin-top: 32px;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background-color: #000;
-}
-
-/* ↓チェックボックスが ON の場合 */
-/* 非表示にしていた ul.menu を表示 */
-.menu-btn:checked~.menu {
-  max-height: inherit;
-  height: 100vh;
-  /* 元 0px */
-}
-
-.menu-btn:checked~.gMenu {
-  background: transparent;
-  /* ↑チェックボックスが OFF の場合 */
 }
 
 #taipei_header_text {
@@ -102,11 +29,14 @@
   right: 0;
 }
 
+/* パンくずリスト */
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
+  margin-top: 8px;
+
 }
 
 .breadcrumb a:hover {
@@ -126,27 +56,75 @@ p {
   text-align: left;
   font-size: 12px;
   line-height: 19.2px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* section {
+  width: auto;
+  margin-left: 40px;
+  margin-right: 39px;
+} */
 
 .at_1,
 .at_2 {
   padding: 20px 16px;
   background-color: rgba(108, 186, 216, 0.2);
-  margin: 20px 40px;
+  margin: 10px 40px;
   text-align: left;
+}
 
+.time {
+  text-align: center;
+  padding: 8px 16px;
+  background-color: rgba(108, 186, 216, 0.2);
+  margin: 20px 40px;
+}
 
+.time p {
+  text-align: center;
+}
 
+.p_t {
+  font-weight: bold;
+}
+
+.attraction h2,
+.nightmarket h2,
+.access h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  background: url(../images/taipei_harffm.png) bottom center/contain no-repeat;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.nm_p {
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+  margin: 20px 40px;
+  padding: 20px 16px;
+}
+
+.ac_p {
+  border-bottom: solid 1px #333;
+  text-align: center;
+  margin: 20px 40px;
 
 }
 
-h2 {
-  font-size: 24px;
+.taipei_101 {
   text-align: center;
-  background-image: url(../images/taipei_harffm.png) no-repeat center / cover;
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+  margin: 40px 40px;
+  padding: 30px 0;
+  border-top: solid 1px #333;
 }
 
 h3 {
@@ -157,15 +135,12 @@ h3 {
 
 .sub {
   font-size: 15px;
-
-
 }
 
 .h3_image1 {
   width: 295px;
   height: 180px;
   text-align: center;
-
 }
 
 .h3_image2 {
@@ -174,14 +149,15 @@ h3 {
   text-align: center;
 }
 
-img {
+.attraction img,
+.nightmarket img {
   display: block;
   margin: 0 auto;
   display: flex;
 }
 
 #attraction_sub,
-#attraction_101 {
+.attraction_101 {
   display: flex;
 }
 
@@ -196,16 +172,85 @@ img {
 }
 
 .side_by {
-  display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 15px 20px 40px;
 }
 
-li side:nth-child(2) {
-  margin: 0 10px;
+.side {
+  margin: 20px 40px 20px 0px;
 }
 
+.time {
+  text-align: center;
+}
 
+#mordal {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+button {
+  font-size: 12px;
+  font-weight: bold;
+  width: 131.7px;
+  height: 57.04px;
+  background-image: url(../images/taipei_button_fm.png);
+  background-size: 100%;
+
+}
+
+/* ボタン配置 */
+.mordal_1 {
+  margin: 20px 6px 6px 49.8px;
+}
+
+.mordal_2 {
+  margin: 20px 49.8px 6px 6px;
+}
+
+.mordal_3 {
+  margin: 6px 6px 20px 49.8px;
+}
+
+.mordal_4 {
+  margin: 6px 49.8px 20px 6px;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+span.access {
+  font-weight: lighter;
+  margin: 0;
+}
+
+.access {
+  width: 296px;
+  margin-left: 40px;
+  margin-right: 39px;
+}
+
+span .access {
+  margin-left: 0;
+}
+
+.card {
+  display: block;
+  height: 64.21px;
+}
+
+.ac_p {
+  height: auto;
+}
+
+.ac_last {
+  margin-bottom: 60px;
+}
 
 
 
@@ -342,3 +387,13 @@ small {
     width: 1024px;
   }
 }
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:780px) {}
