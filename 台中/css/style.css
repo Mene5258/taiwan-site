@@ -52,6 +52,7 @@ header p {
   left: 0;
   right: 0;
   margin: auto;
+  /* margin-bottom: 0; */
   position: absolute;
 }
 
@@ -72,8 +73,8 @@ header p {
   width: 247px;
   height: 58px;
   text-align: left;
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-left: 0;
+  margin-right: 0; */
   font-size: 12px;
   font-weight: bold;
   line-height: 1.6;

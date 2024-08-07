@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../common/css/destyle.css">
-  <!-- <link rel="stylesheet" href="../common/css/style.css"> -->
+  <link rel="stylesheet" href="../common/css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-  <script src="../common/js/main.js"></script>
+
 </head>
 
 <body>
@@ -54,9 +54,9 @@
   </header>
   <!-- ローディング画面 作業時コメントアウト推奨 -->
 
-  <!-- <figure id="loading">
+  <figure id="loading">
     <img src="../common/images/logo.svg" class="taiwan_logo">
-  </figure> -->
+  </figure>
 
   <!-- ここまで -->
   <main>
@@ -131,10 +131,27 @@
       </div>
 
       <p>サザビーズやクリスティーズから厳選された、千点を超える西洋アンティークの収蔵品を展示しています。</p>
+
       <div class="space">
-        <div class="btn">
+        <button id="openbtn1" class="btn">
           <p>営業時間を見る<span class="triangle1"></span></p>
-        </div>
+        </button>
+
+        <dialog>
+          <button id="closebtn1"><img src="../common/images/mordal_close.png" alt=""></button>
+          <section>
+            <h4>新天地西洋博物館</h4>
+            <div class="mordal_pbox">
+              <img src="images/md/taichu_modal5.jpg">
+              <img src="images/md/taichu_modal6.jpg">
+            </div>
+            <p class="">営業時間：10:00〜18:00
+            </p>
+            <p class=""> 住所：台中市東区旱渓東路一段456号1階</p>
+
+          </section>
+        </dialog>
+
       </div>
       <p class="museumtitle">科学美術館<br>
         <span>アジア近代美術館</span>
@@ -146,9 +163,24 @@
 
       <p>20世紀以降のアジア各国の画家や彫刻家による作品を集めて展示しています。</p>
       <div class="space">
-        <div class="btn">
+        <button id="openbtn2" class="btn">
           <p>営業時間を見る<span class="triangle1"></span></p>
-        </div>
+        </button>
+
+        <dialog>
+          <button id="closebtn2"><img src="../common/images/mordal_close.png" alt=""></button>
+          <section>
+            <h4>アジア近代美術館</h4>
+            <div class="mordal_pbox">
+              <img src="images/md/taichu_modal1.jpg">
+              <img src="images/md/taichu_modal2.jpg">
+            </div>
+            <p class="">営業時間：9:30～17:00
+            </p>
+            <p class=""> 住所：台中市霧峰區柳豐路500號</p>
+          </section>
+        </dialog>
+
       </div>
       <p class="museumtitle">屋内外美術館<br>
         <span>勤美術館</span>
@@ -158,10 +190,26 @@
         <img class="museumimg" src="images/taichu_museum_main3.jpg">
       </div>
       <p>絵画、彫刻、インスタレーション、マルチメディア作品など、多様な現代アート作品が展示されています。</p>
+
       <div class="space">
-        <div class="btn">
+        <button id="openbtn3" class="btn">
           <p>営業時間を見る<span class="triangle1"></span></p>
-        </div>
+        </button>
+
+        <dialog>
+          <button id="closebtn3"><img src="../common/images/mordal_close.png" alt=""></button>
+          <section>
+            <h4>勤美術館</h4>
+            <div class="mordal_pbox">
+              <img src="images/md/taichu_modal3.jpg">
+              <img src="images/md/taichu_modal4.jpg">
+            </div>
+            <p class="">営業時間：09:00〜17:00
+            </p>
+            <p class="">住所：台中市西區館前路71號</p>
+          </section>
+        </dialog>
+
       </div>
       <p class="museumtitle">歴史文学を学ぶ<br>
         <span>台中文学館</span>
@@ -173,9 +221,24 @@
       <p>日本統治時代に警察宿舎として建てられた建築物を修繕し、文学公園として開放しています。</p>
 
       <div class="space">
-        <button class="btn">
-          <p id="btn">営業時間を見る<span class="triangle1"></span></p>
+        <button id="openbtn4" class="btn">
+          <p>営業時間を見る<span class="triangle1"></span></p>
         </button>
+
+        <dialog>
+          <button id="closebtn4"><img src="../common/images/mordal_close.png" alt=""></button>
+          <section>
+            <h4>台中文学館</h4>
+            <div class="mordal_pbox">
+              <img src="images/md/taichu_modal7.jpg">
+              <img src="images/md/taichu_modal8.jpg">
+            </div>
+            <p class="">営業時間：09:00〜17:00
+            </p>
+            <p class=""> 住所：台中市楽群街38号</p>
+          </section>
+        </dialog>
+
       </div>
 
     </section>
@@ -227,7 +290,8 @@
     <small>copyright (C) <span class="tm_upper">taiwan</span> traveler </small>
   </footer>
 
-
+  <script src="/台中/js/main.js"></script>
+  <script src="../common/js/main.js"></script>
 </body>
 
 </html>
