@@ -137,15 +137,10 @@ h3 {
   font-size: 15px;
 }
 
-.h3_image1 {
-  width: 295px;
-  height: 180px;
-  text-align: center;
-}
-
+.h3_image1,
 .h3_image2 {
   width: 295px;
-  height: 118px;
+  height: 180px;
   text-align: center;
 }
 
@@ -190,7 +185,31 @@ h3 {
   text-align: center;
 }
 
-button {
+dialog {
+  height: 100vh;
+  width: 100vw;
+  background: #0180be;
+  z-index: 99;
+  position: fixed;
+  top: 10px;
+  padding: 8px;
+}
+
+dialog button img {
+
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.mordal_1,
+.mordal_2,
+.mordal_3,
+.mordal_4 {
+  text-align: center;
+
   font-size: 12px;
   font-weight: bold;
   width: 131.7px;
@@ -203,19 +222,24 @@ button {
 /* ボタン配置 */
 .mordal_1 {
   margin: 20px 6px 6px 49.8px;
+  place-content: center
 }
 
 .mordal_2 {
   margin: 20px 49.8px 6px 6px;
+  place-content: center
 }
 
 .mordal_3 {
   margin: 6px 6px 20px 49.8px;
+  place-content: center
 }
 
 .mordal_4 {
   margin: 6px 49.8px 20px 6px;
+  place-content: center
 }
+
 
 h4 {
   margin-top: 20px;
@@ -252,7 +276,29 @@ span .access {
   margin-bottom: 60px;
 }
 
+.mordal1,
+.mordal_p,
+.mo_time {
+  color: #fff;
+}
 
+.mordal1 {
+  margin-top: 80px;
+  margin-bottom: 36px;
+}
+
+.mordal_p {
+  margin: 20px 36px;
+}
+
+.md {
+  width: 335px;
+  height: 223px;
+}
+
+.mo_time {
+  text-align: center;
+}
 
 
 
