@@ -260,6 +260,10 @@ input[type=radio]:checked+label {
   text-align: left;
 }
 
+.dl_big dt:nth-child(19) {
+  float: none;
+}
+
 .basic_info dt span {
   padding-left: 4px;
 }
@@ -728,4 +732,23 @@ input[type=radio]:checked+label {
 
     width: 1024px;
   }
+}
+
+@-moz-document url-prefix() {
+  .dl_big dt {
+    display: block;
+  }
+
+  .dl_big dt::before {
+    content: "■";
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 5px;
+    margin: auto 0;
+  }
+
+  .dl_celeblate dt::before {
+    content: none;
+  }
+
 }
