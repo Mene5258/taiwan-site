@@ -111,41 +111,51 @@ function click5() {
 }
 
 
-if (window.matchMedia("(max-width: 768px)").matches) {
-  btn.forEach(function (item) {
-    item.onclick = function () {
-      document.getElementById('main_image').src = this.dataset.image;
+
+
+
+const mql = window.matchMedia('(max-width: 768px)');
+mql.addEventListener('change', handleTabletChange)
+
+function handleTabletChange(mwd) {
+  if (mwd.matches) {
+    btn.forEach(function (item) {
+      item.onclick = function () {
+        document.getElementById('main_image').src = this.dataset.image;
+
+      };
+    });
+  } else {
+    const dialog = document.querySelector('dialog');
+    const openbtn = document.querySelectorAll('.modal_img');
+    prebtn.addEventListener('click', premove);
+    nextbtn.addEventListener('click', nextmove);
+    btn1.addEventListener('click', click1);
+    btn2.addEventListener('click', click2);
+    btn3.addEventListener('click', click3);
+    btn4.addEventListener('click', click4);
+    btn5.addEventListener('click', click5);
+
+    openbtn.forEach(function (item) {
+      item.onclick = function () {
+        document.getElementById('modal_main').src = this.dataset.image;
+
+        dialog.show();
+
+      };
 
     }
-  });
-} else {
-  const dialog = document.querySelector('dialog');
-  const openbtn = document.querySelectorAll('.modal_img');
-  prebtn.addEventListener('click', premove);
-  nextbtn.addEventListener('click', nextmove);
-  btn1.addEventListener('click', click1);
-  btn2.addEventListener('click', click2);
-  btn3.addEventListener('click', click3);
-  btn4.addEventListener('click', click4);
-  btn5.addEventListener('click', click5);
+    );
 
-  openbtn.forEach(function (item) {
-    item.onclick = function () {
-      document.getElementById('modal_main').src = this.dataset.image;
-
-      dialog.show();
-
-    }
-
+    const closebtn = document.getElementById('closebtn');
+    closebtn.onclick = function () {
+      dialog.close();
+    };
   }
-  );
 
-  const closebtn = document.getElementById('closebtn');
-  closebtn.onclick = function () {
-    dialog.close();
-  };
 }
 
+handleTabletChange(mql);
 
 
 // 画像をクリックしたら、各ページに飛ぶ

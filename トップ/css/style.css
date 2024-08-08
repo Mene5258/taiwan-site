@@ -281,7 +281,7 @@ input[type=radio]:checked+label {
 
 .dl_celeblate dt {
   list-style-type: none;
-  flex-basis: 22%;
+  flex-basis: 40%;
   font-weight: 400;
   text-align: left;
   float: none;
@@ -292,7 +292,7 @@ input[type=radio]:checked+label {
 }
 
 .dl_celeblate dd {
-  flex-basis: 78%;
+  flex-basis: 60%;
 }
 
 /* modal */
@@ -361,6 +361,12 @@ input[type=radio]:checked+label {
   main {
     font-size: var(--mdfsize);
     text-align: start;
+  }
+
+  .main_wrapper {
+    margin: 0 auto;
+
+    width: 90vw;
   }
 
   main h2 {
@@ -671,10 +677,10 @@ input[type=radio]:checked+label {
   }
 
   .event h3 {
-    font-size: 36px;
+    font-size: 33px;
     text-align: left;
     line-height: 1.6;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
 
   }
 
