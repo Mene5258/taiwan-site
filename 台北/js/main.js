@@ -1,9 +1,9 @@
 'use strict';
 // モーダル1
-const dialog1 = document.querySelector('.md_1');
-const openbtn = document.querySelector('.mordal_1');
+const dialog = document.getElementById('md_1');
+const openbtn = document.getElementById('mordal_1');
 openbtn.onclick = function () {
-  dialog1.show('.mordal1');
+  dialog.show();
 };
 const closebtn = document.getElementById('closebtn');
 closebtn.onclick = function () {
