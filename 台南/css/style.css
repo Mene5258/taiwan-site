@@ -1,3 +1,11 @@
+html {
+  background-color: #F4F4F4;
+}
+
+.breadcrumb {
+  text-align: left;
+}
+
 img {
   display: block;
   text-align: center;
