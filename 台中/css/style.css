@@ -3,6 +3,7 @@
 
 main {
   font-family: "Zen Kaku Gothic New", sans-serif;
+  background-color: #F4F4F4;
 }
 
 :root {
@@ -305,7 +306,8 @@ div {
   width: 120px;
   height: 36px;
   text-decoration: none;
-  border: solid 4px #EDA184;
+  border: solid 4px;
+  border-color: rgba(1, 128, 190, 0.5);
   margin-left: auto;
 }
 
@@ -313,7 +315,8 @@ div {
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 7px solid #EDA184;
+  border-left: 7px solid;
+  border-left-color: rgba(1, 128, 190, 0.5);
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
 }
