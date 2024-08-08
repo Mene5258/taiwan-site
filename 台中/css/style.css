@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-main {
+html {
   font-family: "Zen Kaku Gothic New", sans-serif;
   background-color: #F4F4F4;
 }
@@ -113,8 +113,6 @@ header p {
   color: #fff;
 }
 
-.museumtext
-
 /* ul 要素 メニュー */
 .menu {
   color: #fff;
@@ -168,9 +166,23 @@ header p {
 
 /* メイン要素 */
 .breadcrumb {
-  display: block;
-  text-align: left;
-  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li:not(:last-of-type)::after {
+  content: "›";
+  margin: 0 .6em;
+  /* 記号の左右の余白 */
+  color: #777;
+  /* 記号の色 */
 }
 
 section {
