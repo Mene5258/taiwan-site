@@ -1,7 +1,8 @@
 'use strict'
 
 // モーダル1
-const dialog1 = document.querySelector('dialog');
+const dialog1 = document.getElementById('dialog1');
+
 const openbtn1 = document.getElementById('openbtn1');
 
 openbtn1.onclick = function () {
@@ -15,7 +16,7 @@ closebtn1.onclick = function () {
 
 // モーダル２
 
-const dialog2 = document.querySelector('dialog');
+const dialog2 = document.getElementById('dialog2');
 const openbtn2 = document.getElementById('openbtn2');
 
 openbtn2.onclick = function () {
@@ -28,7 +29,7 @@ closebtn2.onclick = function () {
 };
 
 // モーダル3
-const dialog3 = document.querySelector('dialog');
+const dialog3 = document.getElementById('dialog3');
 const openbtn3 = document.getElementById('openbtn3');
 
 openbtn3.onclick = function () {
@@ -42,7 +43,7 @@ closebtn3.onclick = function () {
 
 // モーダル4
 
-const dialog4 = document.querySelector('dialog');
+const dialog4 = document.getElementById('dialog4');
 const openbtn4 = document.getElementById('openbtn4');
 
 openbtn4.onclick = function () {
