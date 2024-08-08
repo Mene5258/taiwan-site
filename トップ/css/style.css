@@ -727,11 +727,7 @@ input[type=radio]:checked+label {
 @media screen and (min-width:1024px) {
 
 
-  .int_top,
-  .int_bottom {
-    width: 100vw;
 
-  }
 
   .main_wrapper {
     margin: 0 auto;
